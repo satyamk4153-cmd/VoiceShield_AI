@@ -334,19 +334,19 @@ function EvidenceContent() {
                 <div className="flex items-center gap-2 border-b border-slate-100 pb-3">
                   <MessageSquare className="h-4 w-4 text-blue-600" />
                   <h3 className="text-sm font-semibold text-slate-900">
-                    Analyst Investigation Audit Notes ({selectedIncident.analyst_notes?.length || 0})
+                    Analyst Investigation Audit Notes ({selectedIncident.notes?.length || 0})
                   </h3>
                 </div>
 
                 {/* Existing Notes */}
                 <div className="space-y-2.5 max-h-56 overflow-y-auto">
-                  {(!selectedIncident.analyst_notes || selectedIncident.analyst_notes.length === 0) ? (
+                  {(!selectedIncident.notes || selectedIncident.notes.length === 0) ? (
                     <p className="text-xs text-slate-400 italic">No notes logged yet for this incident.</p>
                   ) : (
-                    selectedIncident.analyst_notes.map((note) => (
+                    selectedIncident.notes.map((note) => (
                       <div key={note.id} className="p-3 rounded-md bg-slate-50 border border-slate-200 space-y-1">
                         <div className="flex items-center justify-between text-[11px] text-slate-500">
-                          <span className="font-semibold text-slate-900">{note.analyst_name}</span>
+                          <span className="font-semibold text-slate-900">{note.author_name || (note as any).analyst_name || "Analyst"}</span>
                           <span className="font-mono text-[10px]">
                             {note.created_at ? new Date(note.created_at).toLocaleTimeString() : ""}
                           </span>

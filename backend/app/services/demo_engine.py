@@ -954,6 +954,7 @@ class DemoEngineService:
             is_demo_data=True,
             provider_used="demo_sandbox",
             transcript=scenario.transcript,
+            caller_claimed_identity=scenario.caller_claimed,
             risk=RiskAssessment(
                 score=scenario.expected_risk_score,
                 level=scenario.expected_risk_level,

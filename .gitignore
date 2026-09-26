@@ -11,7 +11,7 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+# Python virtualenv internals
 lib64/
 parts/
 sdist/
@@ -23,6 +23,7 @@ wheels/
 .venv/
 venv/
 ENV/
+!frontend/lib/
 
 # Testing
 .pytest_cache/

@@ -48,6 +48,7 @@ class FinalAnalysisResponse(BaseModel):
     is_demo_data: bool = False
     provider_used: str = "local"
     transcript: Optional[str] = None
+    caller_claimed_identity: Optional[str] = None
     
     risk: RiskAssessment
     voice: VoiceAuthenticityResult
