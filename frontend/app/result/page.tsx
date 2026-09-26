@@ -3,15 +3,15 @@
 import React, { useState, useEffect, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
-import { PageHeader } from "@/components/PageHeader";
-import { GlassCard } from "@/components/GlassCard";
-import { RiskScore } from "@/components/RiskScore";
-import { AudioQualityCard } from "@/components/AudioQualityCard";
-import { SpeakerMatchCard } from "@/components/SpeakerMatchCard";
-import { WarningBanner } from "@/components/WarningBanner";
-import { FraudSignals } from "@/components/FraudSignals";
-import { FinalAnalysisResponse } from "@/lib/types";
-import { ApiClient } from "@/lib/api";
+import { PageHeader } from "../../components/PageHeader";
+import { GlassCard } from "../../components/GlassCard";
+import { RiskScore } from "../../components/RiskScore";
+import { AudioQualityCard } from "../../components/AudioQualityCard";
+import { SpeakerMatchCard } from "../../components/SpeakerMatchCard";
+import { WarningBanner } from "../../components/WarningBanner";
+import { FraudSignals } from "../../components/FraudSignals";
+import { FinalAnalysisResponse } from "../../lib/types";
+import { ApiClient } from "../../lib/api";
 import {
   Download,
   Share2,

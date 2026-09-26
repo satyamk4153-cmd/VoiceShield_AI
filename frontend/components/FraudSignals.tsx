@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import { FraudSignal } from "@/lib/types";
-import { SignalCard } from "@/components/SignalCard";
+import { FraudSignal } from "../lib/types";
+import { SignalCard } from "../components/SignalCard";
 import { ShieldCheck } from "lucide-react";
 
 interface FraudSignalsProps {

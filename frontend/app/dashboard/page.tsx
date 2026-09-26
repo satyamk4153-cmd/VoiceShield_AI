@@ -2,11 +2,11 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { PageHeader } from "@/components/PageHeader";
-import { StatCard } from "@/components/StatCard";
-import { GlassCard } from "@/components/GlassCard";
-import { DashboardStats } from "@/lib/types";
-import { ApiClient } from "@/lib/api";
+import { PageHeader } from "../../components/PageHeader";
+import { StatCard } from "../../components/StatCard";
+import { GlassCard } from "../../components/GlassCard";
+import { DashboardStats } from "../../lib/types";
+import { ApiClient } from "../../lib/api";
 import {
   ShieldAlert,
   Cpu,

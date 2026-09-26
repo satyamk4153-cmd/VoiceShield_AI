@@ -4,9 +4,9 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { Shield, Radio, Activity, Mic, Play, BarChart3, UserCheck, Menu, X, AlertTriangle, LogIn, LogOut, User as UserIcon } from "lucide-react";
-import { cn } from "@/lib/utils";
-import { ApiClient } from "@/lib/api";
-import { UserResponse } from "@/lib/types";
+import { cn } from "../lib/utils";
+import { ApiClient } from "../lib/api";
+import { UserResponse } from "../lib/types";
 
 export const Navbar: React.FC = () => {
   const pathname = usePathname();

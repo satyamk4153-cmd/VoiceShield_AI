@@ -1,11 +1,11 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { PageHeader } from "@/components/PageHeader";
-import { GlassCard } from "@/components/GlassCard";
-import { SpeakerMatchCard } from "@/components/SpeakerMatchCard";
-import { SpeakerVerification, SpeakerProfile } from "@/lib/types";
-import { ApiClient } from "@/lib/api";
+import { PageHeader } from "../../components/PageHeader";
+import { GlassCard } from "../../components/GlassCard";
+import { SpeakerMatchCard } from "../../components/SpeakerMatchCard";
+import { SpeakerVerification, SpeakerProfile } from "../../lib/types";
+import { ApiClient } from "../../lib/api";
 import {
   UserCheck,
   Upload,

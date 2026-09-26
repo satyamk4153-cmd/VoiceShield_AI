@@ -16,9 +16,9 @@ import {
   PhoneCall,
   CheckCircle2,
 } from "lucide-react";
-import { GlassCard } from "@/components/GlassCard";
-import { AnimatedPipeline } from "@/components/AnimatedPipeline";
-import { Logo } from "@/components/Logo";
+import { GlassCard } from "../components/GlassCard";
+import { AnimatedPipeline } from "../components/AnimatedPipeline";
+import { Logo } from "../components/Logo";
 
 export default function HomePage() {
   const capabilities = [

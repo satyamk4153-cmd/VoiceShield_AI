@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { PhoneCall, Activity, ShieldCheck, UserCheck, MessageSquareWarning, Flame, Cpu, AlertOctagon, Check } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn } from "../lib/utils";
 
 interface PipelineStep {
   id: string;

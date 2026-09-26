@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { useSpring, useTransform } from "framer-motion";
-import { cn, getRiskColor } from "@/lib/utils";
+import { cn, getRiskColor } from "../lib/utils";
 import { ShieldAlert, ShieldCheck, AlertTriangle } from "lucide-react";
 
 interface RiskScoreProps {

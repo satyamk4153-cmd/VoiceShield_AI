@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import { AudioQuality } from "@/lib/types";
+import { AudioQuality } from "../lib/types";
 import { Activity, AlertCircle, CheckCircle2 } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn } from "../lib/utils";
 
 interface AudioQualityCardProps {
   audio: AudioQuality;

@@ -18,9 +18,9 @@ import {
   User as UserIcon,
   AlertTriangle,
 } from "lucide-react";
-import { Logo } from "@/components/Logo";
-import { ApiClient } from "@/lib/api";
-import { UserResponse } from "@/lib/types";
+import { Logo } from "../components/Logo";
+import { ApiClient } from "../lib/api";
+import { UserResponse } from "../lib/types";
 
 interface AppLayoutProps {
   children: React.ReactNode;

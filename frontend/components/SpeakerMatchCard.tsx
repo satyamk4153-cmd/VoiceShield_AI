@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import { SpeakerVerification } from "@/lib/types";
+import { SpeakerVerification } from "../lib/types";
 import { UserCheck, UserX, HelpCircle } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn } from "../lib/utils";
 
 interface SpeakerMatchCardProps {
   speaker: SpeakerVerification;

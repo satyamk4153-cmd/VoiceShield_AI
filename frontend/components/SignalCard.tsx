@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import { FraudSignal } from "@/lib/types";
+import { FraudSignal } from "../lib/types";
 import { AlertCircle, KeyRound, Building, Flame, CreditCard, Laptop, Award } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn } from "../lib/utils";
 import { motion } from "framer-motion";
 
 interface SignalCardProps {

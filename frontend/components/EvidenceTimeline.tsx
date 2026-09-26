@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { EvidenceItem } from "@/lib/types";
+import { EvidenceItem } from "../lib/types";
 import { motion } from "framer-motion";
 import { Clock, ShieldAlert, Cpu, UserX, AlertTriangle, KeyRound } from "lucide-react";
 

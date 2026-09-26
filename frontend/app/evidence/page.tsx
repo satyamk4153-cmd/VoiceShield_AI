@@ -3,11 +3,11 @@
 import React, { useState, useEffect, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
-import { PageHeader } from "@/components/PageHeader";
-import { GlassCard } from "@/components/GlassCard";
-import { EvidenceTimeline } from "@/components/EvidenceTimeline";
-import { IncidentListItem, IncidentDetail } from "@/lib/types";
-import { ApiClient } from "@/lib/api";
+import { PageHeader } from "../../components/PageHeader";
+import { GlassCard } from "../../components/GlassCard";
+import { EvidenceTimeline } from "../../components/EvidenceTimeline";
+import { IncidentListItem, IncidentDetail } from "../../lib/types";
+import { ApiClient } from "../../lib/api";
 import {
   Filter,
   CheckCircle2,

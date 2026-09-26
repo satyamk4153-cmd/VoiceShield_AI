@@ -4,8 +4,8 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { Lock, Mail, KeyRound, AlertCircle, ArrowRight, CheckCircle2, Shield } from "lucide-react";
-import { Logo } from "@/components/Logo";
-import { ApiClient } from "@/lib/api";
+import { Logo } from "../../components/Logo";
+import { ApiClient } from "../../lib/api";
 
 export default function LoginPage() {
   const router = useRouter();

@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import { PageHeader } from "@/components/PageHeader";
-import { GlassCard } from "@/components/GlassCard";
+import { PageHeader } from "../../components/PageHeader";
+import { GlassCard } from "../../components/GlassCard";
 import { Shield, Lock, AlertTriangle, Sparkles, Compass } from "lucide-react";
 
 export default function AboutPage() {

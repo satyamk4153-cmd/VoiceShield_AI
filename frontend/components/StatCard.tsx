@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import { GlassCard } from "@/components/GlassCard";
+import { GlassCard } from "../components/GlassCard";
 import { LucideIcon } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn } from "../lib/utils";
 
 interface StatCardProps {
   label: string;

@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import { DemoScenario } from "@/lib/types";
-import { GlassCard } from "@/components/GlassCard";
+import { DemoScenario } from "../lib/types";
+import { GlassCard } from "../components/GlassCard";
 import { Play, ArrowRight } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn } from "../lib/utils";
 import Link from "next/link";
 
 interface DemoPlayerProps {

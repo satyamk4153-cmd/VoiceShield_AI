@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { PageHeader } from "@/components/PageHeader";
-import { DemoPlayer } from "@/components/DemoPlayer";
-import { DemoScenario } from "@/lib/types";
-import { ApiClient } from "@/lib/api";
+import { PageHeader } from "../../components/PageHeader";
+import { DemoPlayer } from "../../components/DemoPlayer";
+import { DemoScenario } from "../../lib/types";
+import { ApiClient } from "../../lib/api";
 import { Info } from "lucide-react";
 
 const CANONICAL_SCENARIOS: DemoScenario[] = [

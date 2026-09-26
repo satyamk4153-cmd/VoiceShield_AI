@@ -2,8 +2,8 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { PageHeader } from "@/components/PageHeader";
-import { GlassCard } from "@/components/GlassCard";
+import { PageHeader } from "../../components/PageHeader";
+import { GlassCard } from "../../components/GlassCard";
 import {
   Upload,
   Mic,
@@ -14,14 +14,14 @@ import {
   ShieldCheck,
   FileText,
 } from "lucide-react";
-import { ApiClient } from "@/lib/api";
-import { FinalAnalysisResponse } from "@/lib/types";
-import { RiskScore } from "@/components/RiskScore";
-import { FraudSignals } from "@/components/FraudSignals";
-import { AudioQualityCard } from "@/components/AudioQualityCard";
-import { SpeakerMatchCard } from "@/components/SpeakerMatchCard";
-import { WarningBanner } from "@/components/WarningBanner";
-import { AnimatedPipeline } from "@/components/AnimatedPipeline";
+import { ApiClient } from "../../lib/api";
+import { FinalAnalysisResponse } from "../../lib/types";
+import { RiskScore } from "../../components/RiskScore";
+import { FraudSignals } from "../../components/FraudSignals";
+import { AudioQualityCard } from "../../components/AudioQualityCard";
+import { SpeakerMatchCard } from "../../components/SpeakerMatchCard";
+import { WarningBanner } from "../../components/WarningBanner";
+import { AnimatedPipeline } from "../../components/AnimatedPipeline";
 
 export default function AnalyzePage() {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);

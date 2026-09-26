@@ -17,10 +17,10 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import Link from "next/link";
-import { DemoScenario, FraudSignal } from "@/lib/types";
-import { SignalCard } from "@/components/SignalCard";
-import { WarningBanner } from "@/components/WarningBanner";
-import { cn } from "@/lib/utils";
+import { DemoScenario, FraudSignal } from "../lib/types";
+import { SignalCard } from "../components/SignalCard";
+import { WarningBanner } from "../components/WarningBanner";
+import { cn } from "../lib/utils";
 
 interface CallSimulatorProps {
   scenario: DemoScenario;

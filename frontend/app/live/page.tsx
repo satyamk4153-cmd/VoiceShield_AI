@@ -3,12 +3,12 @@
 import React, { useState, useEffect, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
-import { PageHeader } from "@/components/PageHeader";
-import { CallSimulator } from "@/components/CallSimulator";
-import { DemoScenario } from "@/lib/types";
-import { ApiClient } from "@/lib/api";
+import { PageHeader } from "../../components/PageHeader";
+import { CallSimulator } from "../../components/CallSimulator";
+import { DemoScenario } from "../../lib/types";
+import { ApiClient } from "../../lib/api";
 import { Loader2, AlertCircle, PhoneCall, ArrowRight, ShieldCheck, RefreshCw } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
 
 function LiveSimulationContent() {
   const searchParams = useSearchParams();
