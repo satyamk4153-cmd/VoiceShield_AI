@@ -11,13 +11,16 @@ import {
 } from "./types";
 
 function getApiBaseUrl(): string {
+  // Always use Next.js rewrites proxy in the browser to avoid CORS and handle 502s properly
+  if (typeof window !== "undefined") {
+    return "";
+  }
+
   const envUrl = process.env.NEXT_PUBLIC_API_URL;
   if (!envUrl) {
-    if (typeof window !== "undefined") {
-      return "";
-    }
     return "http://localhost:8000";
   }
+  
   let url = envUrl.trim();
   if (url && !url.startsWith("http://") && !url.startsWith("https://")) {
     url = `https://${url}`;
@@ -84,6 +87,10 @@ export class ApiClient {
 
   private static async handleResponse<T>(res: Response): Promise<T> {
     if (!res.ok) {
+      if (res.status === 502 || res.status === 503) {
+        throw new Error("Backend service is waking up (this can take ~50 seconds). Please try again shortly.");
+      }
+
       let errorMessage = `API Error ${res.status}: ${res.statusText}`;
       try {
         const errorJson = await res.json();
